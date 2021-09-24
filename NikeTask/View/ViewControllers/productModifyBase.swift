@@ -7,13 +7,14 @@
 
 import UIKit
 
-class productModifyBase: UIViewController {
+class productModifyBase: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
     
     let backButton  = NTButton(iconImage: Images.backIcon)
     let titleLabel = NTLabel()
     
     let getImageButton = GetImageButton()
+    let imagePicker     = UIImagePickerController()
     
     let nameTF = NTTextfeild(placeHolder: Strings.namePlaceHolder)
     let descTF = NTTextfeild(placeHolder: Strings.DescPlaceHolder)
@@ -26,6 +27,7 @@ class productModifyBase: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureLayout()
+        imagePicker.delegate = self
         
         // Do any additional setup after loading the view.
     }

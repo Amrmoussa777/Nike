@@ -38,7 +38,7 @@ class ProductCell: UICollectionViewCell {
             nameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: padding),
             nameLabel.topAnchor.constraint(equalTo: productImage.bottomAnchor, constant: padding),
             nameLabel.heightAnchor.constraint(equalToConstant: 15),
-            nameLabel.widthAnchor.constraint(equalTo: widthAnchor,multiplier: 0.7),
+            nameLabel.widthAnchor.constraint(equalTo: widthAnchor,multiplier: 0.6),
             
             priceLabel.leadingAnchor.constraint(equalTo: nameLabel.trailingAnchor),
             priceLabel.topAnchor.constraint(equalTo: productImage.bottomAnchor, constant: padding),
@@ -57,7 +57,7 @@ class ProductCell: UICollectionViewCell {
     }
     
     
-    func setProduct(product:product){
+    func setProduct(product:productModel){
         productImage.setImage(img: product.image)
         nameLabel.setText(text: product.name)
         priceLabel.setPrice(Price: String(product.price))

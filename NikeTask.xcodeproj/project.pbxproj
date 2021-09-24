@@ -46,6 +46,8 @@
 		1FC2EBA626FCFF1B00BC4378 /* FilterVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EBA526FCFF1B00BC4378 /* FilterVCPresenter.swift */; };
 		1FC2EBA826FDE90000BC4378 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EBA726FDE90000BC4378 /* EmptyStateView.swift */; };
 		1FC2EBAA26FDED8B00BC4378 /* NTVectorImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EBA926FDED8B00BC4378 /* NTVectorImageView.swift */; };
+		1FC2EBEC26FDFF8C00BC4378 /* NikeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EBEA26FDFF8C00BC4378 /* NikeModel.xcdatamodeld */; };
+		1FC2EBEE26FE0FA600BC4378 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EBED26FE0FA600BC4378 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +113,8 @@
 		1FC2EBA526FCFF1B00BC4378 /* FilterVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterVCPresenter.swift; sourceTree = "<group>"; };
 		1FC2EBA726FDE90000BC4378 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		1FC2EBA926FDED8B00BC4378 /* NTVectorImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTVectorImageView.swift; sourceTree = "<group>"; };
+		1FC2EBEB26FDFF8C00BC4378 /* NikeModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NikeModel.xcdatamodel; sourceTree = "<group>"; };
+		1FC2EBED26FE0FA600BC4378 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				1FC2EB5F26FB4D2900BC4378 /* Product.swift */,
+				1FC2EBED26FE0FA600BC4378 /* DataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 				1FC2EB7226FB62DF00BC4378 /* MockData */,
 				1FC2EB6F26FB5A4500BC4378 /* Extensions */,
 				1FC2EB2926FB368600BC4378 /* AppDelegate.swift */,
+				1FC2EBEA26FDFF8C00BC4378 /* NikeModel.xcdatamodeld */,
 				1FC2EB2B26FB368600BC4378 /* SceneDelegate.swift */,
 				1FC2EB6626FB502B00BC4378 /* Constants.swift */,
 			);
@@ -447,6 +453,7 @@
 			files = (
 				1FC2EB2E26FB368600BC4378 /* ProductsVC.swift in Sources */,
 				1FC2EB2A26FB368600BC4378 /* AppDelegate.swift in Sources */,
+				1FC2EBEC26FDFF8C00BC4378 /* NikeModel.xcdatamodeld in Sources */,
 				1FC2EB6C26FB542600BC4378 /* PriceLabel.swift in Sources */,
 				1FC2EB9226FC964900BC4378 /* alterProductButton.swift in Sources */,
 				1FC2EB9826FCD67F00BC4378 /* AddNewProductPresenter.swift in Sources */,
@@ -477,6 +484,7 @@
 				1FC2EB2C26FB368600BC4378 /* SceneDelegate.swift in Sources */,
 				1FC2EB6726FB502B00BC4378 /* Constants.swift in Sources */,
 				1FC2EB7626FB7E6C00BC4378 /* UIColor+EXt.swift in Sources */,
+				1FC2EBEE26FE0FA600BC4378 /* DataManager.swift in Sources */,
 				1FC2EB6A26FB532800BC4378 /* NTLabel.swift in Sources */,
 				1FC2EB8926FC809D00BC4378 /* GetImageButton.swift in Sources */,
 				1FC2EB9626FCA02500BC4378 /* AddNewProductVC.swift in Sources */,
@@ -794,6 +802,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1FC2EBEA26FDFF8C00BC4378 /* NikeModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1FC2EBEB26FDFF8C00BC4378 /* NikeModel.xcdatamodel */,
+			);
+			currentVersion = 1FC2EBEB26FDFF8C00BC4378 /* NikeModel.xcdatamodel */;
+			path = NikeModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1FC2EB1E26FB368600BC4378 /* Project object */;
 }

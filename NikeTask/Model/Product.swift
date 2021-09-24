@@ -8,7 +8,7 @@
 import UIKit
 
 
-struct product {
+struct productModel {
     let id:UUID
     let name:String
     let image:UIImage

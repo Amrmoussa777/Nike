@@ -29,5 +29,14 @@ class AddNewProductVC: productModifyBase {
         addButton.addTarget(presenter, action: #selector(presenter.addProductPressed), for: .touchUpInside)
     }
     
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+            if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+                presenter.newImageSelected(img: pickedImage)
+            }
+            dismiss(animated: true, completion: nil)
+        }
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+            dismiss(animated: true, completion: nil)
+        }
 }
 

@@ -48,7 +48,7 @@ extension UIViewController {
 
     func showToast(message : String, font: UIFont? = UIFont.systemFont(ofSize: 19)
                    ,icon:UIImage? = Images.checkMark) {
-        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 100, y: self.view.frame.size.height-100, width: 200, height: 40))
+        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 100, y: self.view.frame.size.height-100, width: 250, height: 40))
         toastLabel.roundShape()
         toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.4)
         toastLabel.textColor = UIColor.white
@@ -67,7 +67,7 @@ extension UIViewController {
         toastLabel.alpha = 1.0
         
         self.view.addSubview(toastLabel)
-        UIView.animate(withDuration: 20.0, delay: 0.1, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: 4.0, delay: 0.1, options: .curveEaseOut, animations: {
              toastLabel.alpha = 0.0
         }, completion: {(isCompleted) in
             toastLabel.removeFromSuperview()

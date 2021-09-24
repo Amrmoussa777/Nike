@@ -34,11 +34,18 @@ class FilterVCPresenter: FilterVCiewPresenterProtocol {
     }
     
     @objc func filterPressed() {
-        view?.showToast(message: "filter tapped")
+        let subName = view?.nameTF.text ?? ""
+        let ratio = view?.slider.value ?? 0.5
+        weak var parent = view?.presentingViewController as? ProductsVC
+        view?.dismiss(animated: true, completion: {
+            parent?.productsPresenter.filterData(with: subName, ratio: ratio)
+        })
+
     }
     
     @objc  func resetPressed() {
-        #warning("<#T##message###>")
+        view?.nameTF.text = ""
+        view?.slider.setValue(1, animated: true)
     }
     
     

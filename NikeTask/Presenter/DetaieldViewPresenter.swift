@@ -5,18 +5,18 @@
 //  Created by Amr Moussa on 23/09/2021.
 //
 
-import Foundation
+import UIKit
 
 
 protocol DetailedViewPresenterProtocol {
-    var product:product?{ get }
+    var product:productModel?{ get }
     func editClicked()
     func deletedPressed()
 }
 
 
 class DetaieldViewPresenter: DetailedViewPresenterProtocol {
-    var product: product?{didSet{setDate()}}
+    var product: productModel?{didSet{setDate()}}
     
     
     
@@ -35,8 +35,20 @@ class DetaieldViewPresenter: DetailedViewPresenterProtocol {
         view?.descLabel.setDesc(desc: product?.desc ?? "")
     }
     
+    
     @objc func deletedPressed() {
-        print(product)
+        guard let dProduct = product else {return}
+        let loadingView = view?.showLoadingView()
+        DataManager.shared.deleteProduct(dProduct: dProduct) { [weak self] result in
+            guard let self = self else {return}
+            loadingView?.removeFromSuperview()
+            switch(result){
+            case .success(_):
+                self.updateHome()
+            case .failure( let error):
+                self.showErrorMessage(text: error.rawValue)
+            }
+        }
     }
     
     @objc  func editClicked() {
@@ -49,6 +61,14 @@ class DetaieldViewPresenter: DetailedViewPresenterProtocol {
         })
     }
     
-    
+    private func showErrorMessage(text:String){
+        view?.showToast(message: text,font: UIFont.systemFont(ofSize: 14), icon: Images.error)
+    }
+    private func updateHome(){
+        weak var parent = view?.presentingViewController as? ProductsVC
+        view?.dismiss(animated: true, completion: {
+            parent?.productsPresenter.loadData()
+        })
+    }
     
 }

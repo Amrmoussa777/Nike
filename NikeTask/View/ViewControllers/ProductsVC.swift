@@ -14,11 +14,16 @@ class ProductsVC: UIViewController{
      // collection View
     var productsCV:UICollectionView!
     let flowLayout = UICollectionViewFlowLayout()
-
+    
+    var emptySate:EmptyStateView?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         configureLayout()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
 
     private func configureLayout(){
@@ -38,6 +43,8 @@ class ProductsVC: UIViewController{
     
     func showEMptyState(){
         let emptyState = EmptyStateView()
+        self.emptySate?.removeFromSuperview()
+        self.emptySate = emptyState
        view.addSubview(emptyState)
         NSLayoutConstraint.activate([
             emptyState.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -52,12 +59,12 @@ class ProductsVC: UIViewController{
 extension ProductsVC: UICollectionViewDelegate, UICollectionViewDataSource ,UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return productsPresenter.data.count
+        return productsPresenter.filterdData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = productsCV.dequeueReusableCell(withReuseIdentifier: ProductCell.cellID, for: indexPath) as! ProductCell
-        cell.setProduct(product: productsPresenter.data[indexPath.row])
+        cell.setProduct(product: productsPresenter.filterdData[indexPath.row])
         return cell
     }
     

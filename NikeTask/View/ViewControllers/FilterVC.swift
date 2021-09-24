@@ -9,19 +9,27 @@ import UIKit
 
 class FilterVC: UIViewController {
     
+    static let shared = FilterVC()
     lazy var  FilterPresenter =  FilterVCPresenter(view: self)
     let contentView = UIView()
     
     let titleLabel = NTLabel()
     let nameTF = NTTextfeild(placeHolder: Strings.namePlaceHolder)
     
-    #warning("take as seperate class and change track height")
+    
     let slider = UISlider()
     let sliderLabel = DescLabel()
     
     let filterButton = alterProductButton()
     let resetButton = alterProductButton()
 
+    private init(){
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -111,7 +119,7 @@ class FilterVC: UIViewController {
         slider.setThumbImage(Images.sliderThumb, for: .normal)
         slider.minimumValue = 0
         slider.maximumValue = 1
-        slider.setValue(0.5, animated: true)
+        slider.setValue(1, animated: true)
         slider.minimumValueImage = Images.sliderMinImage
         slider.maximumValueImage = Images.sliderMaxImage
         

@@ -75,8 +75,8 @@ class EmptyStateView: UIView {
         subHeadLaebl.textAlignment = .center
     }
     
-    private func startAnimation(){
-        UIView.animate(withDuration: 2, delay: 1,options: [.repeat, .autoreverse],
+     func startAnimation(){
+        UIView.animate(withDuration: 2, delay: 1,options: [.repeat, .autoreverse,],
             animations: {
                 self.backGIMV.transform = CGAffineTransform(scaleX: 0.6, y: 1)
                 self.boxIMV.transform = CGAffineTransform(translationX: 0, y: 10)
