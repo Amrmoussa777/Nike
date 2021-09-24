@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FC2EB2A26FB368600BC4378 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB2926FB368600BC4378 /* AppDelegate.swift */; };
+		1FC2EB2C26FB368600BC4378 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB2B26FB368600BC4378 /* SceneDelegate.swift */; };
+		1FC2EB2E26FB368600BC4378 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB2D26FB368600BC4378 /* ProductsVC.swift */; };
+		1FC2EB3326FB368A00BC4378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FC2EB3226FB368A00BC4378 /* Assets.xcassets */; };
+		1FC2EB4126FB368A00BC4378 /* NikeTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB4026FB368A00BC4378 /* NikeTaskTests.swift */; };
+		1FC2EB4C26FB368A00BC4378 /* NikeTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB4B26FB368A00BC4378 /* NikeTaskUITests.swift */; };
+		1FC2EB5E26FB492F00BC4378 /* ProductsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB5D26FB492F00BC4378 /* ProductsPresenter.swift */; };
+		1FC2EB6026FB4D2900BC4378 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB5F26FB4D2900BC4378 /* Product.swift */; };
+		1FC2EB6226FB4EE000BC4378 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB6126FB4EE000BC4378 /* ProductCell.swift */; };
+		1FC2EB6526FB4F8700BC4378 /* NTImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB6426FB4F8700BC4378 /* NTImageView.swift */; };
+		1FC2EB6726FB502B00BC4378 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB6626FB502B00BC4378 /* Constants.swift */; };
+		1FC2EB6A26FB532800BC4378 /* NTLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB6926FB532800BC4378 /* NTLabel.swift */; };
+		1FC2EB6C26FB542600BC4378 /* PriceLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB6B26FB542600BC4378 /* PriceLabel.swift */; };
+		1FC2EB6E26FB57A000BC4378 /* DescLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB6D26FB57A000BC4378 /* DescLabel.swift */; };
+		1FC2EB7126FB5A5800BC4378 /* UIView+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB7026FB5A5800BC4378 /* UIView+EXT.swift */; };
+		1FC2EB7426FB62F100BC4378 /* ProductsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB7326FB62F100BC4378 /* ProductsMock.swift */; };
+		1FC2EB7626FB7E6C00BC4378 /* UIColor+EXt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB7526FB7E6C00BC4378 /* UIColor+EXt.swift */; };
+		1FC2EB7926FB841200BC4378 /* ProductsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB7826FB841200BC4378 /* ProductsHeaderView.swift */; };
+		1FC2EB7B26FB845800BC4378 /* BrandCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB7A26FB845800BC4378 /* BrandCardView.swift */; };
+		1FC2EB7F26FB952600BC4378 /* ProductTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB7E26FB952600BC4378 /* ProductTitleView.swift */; };
+		1FC2EB8226FB960200BC4378 /* NTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB8126FB960200BC4378 /* NTButton.swift */; };
+		1FC2EB8426FB989100BC4378 /* CGFloat+EXt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB8326FB989100BC4378 /* CGFloat+EXt.swift */; };
+		1FC2EB8726FC7DEB00BC4378 /* productModifyBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB8626FC7DEB00BC4378 /* productModifyBase.swift */; };
+		1FC2EB8926FC809D00BC4378 /* GetImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB8826FC809D00BC4378 /* GetImageButton.swift */; };
+		1FC2EB8B26FC8F7200BC4378 /* UITextFeild+EXt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB8A26FC8F7200BC4378 /* UITextFeild+EXt.swift */; };
+		1FC2EB8E26FC90B200BC4378 /* NTTextFeild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB8D26FC90B200BC4378 /* NTTextFeild.swift */; };
+		1FC2EB9226FC964900BC4378 /* alterProductButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB9126FC964900BC4378 /* alterProductButton.swift */; };
+		1FC2EB9426FC988A00BC4378 /* NTEditButtonBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB9326FC988A00BC4378 /* NTEditButtonBase.swift */; };
+		1FC2EB9626FCA02500BC4378 /* AddNewProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB9526FCA02500BC4378 /* AddNewProductVC.swift */; };
+		1FC2EB9826FCD67F00BC4378 /* AddNewProductPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB9726FCD67F00BC4378 /* AddNewProductPresenter.swift */; };
+		1FC2EB9A26FCDB0900BC4378 /* DetaieldProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB9926FCDB0900BC4378 /* DetaieldProduct.swift */; };
+		1FC2EB9C26FCDC1A00BC4378 /* UIVC+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB9B26FCDC1A00BC4378 /* UIVC+EXT.swift */; };
+		1FC2EB9E26FCE1B800BC4378 /* DetaieldViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB9D26FCE1B800BC4378 /* DetaieldViewPresenter.swift */; };
+		1FC2EBA026FCF53F00BC4378 /* EditProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EB9F26FCF53F00BC4378 /* EditProductVC.swift */; };
+		1FC2EBA226FCF5B100BC4378 /* EditProductPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EBA126FCF5B100BC4378 /* EditProductPresenter.swift */; };
+		1FC2EBA426FCFEC700BC4378 /* FilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EBA326FCFEC700BC4378 /* FilterVC.swift */; };
+		1FC2EBA626FCFF1B00BC4378 /* FilterVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EBA526FCFF1B00BC4378 /* FilterVCPresenter.swift */; };
+		1FC2EBA826FDE90000BC4378 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EBA726FDE90000BC4378 /* EmptyStateView.swift */; };
+		1FC2EBAA26FDED8B00BC4378 /* NTVectorImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2EBA926FDED8B00BC4378 /* NTVectorImageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FC2EB3D26FB368A00BC4378 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FC2EB1E26FB368600BC4378 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FC2EB2526FB368600BC4378;
+			remoteInfo = NikeTask;
+		};
+		1FC2EB4826FB368A00BC4378 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FC2EB1E26FB368600BC4378 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FC2EB2526FB368600BC4378;
+			remoteInfo = NikeTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1FC2EB2626FB368600BC4378 /* NikeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NikeTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FC2EB2926FB368600BC4378 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1FC2EB2B26FB368600BC4378 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1FC2EB2D26FB368600BC4378 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
+		1FC2EB3226FB368A00BC4378 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FC2EB3726FB368A00BC4378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FC2EB3C26FB368A00BC4378 /* NikeTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NikeTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FC2EB4026FB368A00BC4378 /* NikeTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeTaskTests.swift; sourceTree = "<group>"; };
+		1FC2EB4226FB368A00BC4378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FC2EB4726FB368A00BC4378 /* NikeTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NikeTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FC2EB4B26FB368A00BC4378 /* NikeTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeTaskUITests.swift; sourceTree = "<group>"; };
+		1FC2EB4D26FB368A00BC4378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FC2EB5D26FB492F00BC4378 /* ProductsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsPresenter.swift; sourceTree = "<group>"; };
+		1FC2EB5F26FB4D2900BC4378 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		1FC2EB6126FB4EE000BC4378 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		1FC2EB6426FB4F8700BC4378 /* NTImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTImageView.swift; sourceTree = "<group>"; };
+		1FC2EB6626FB502B00BC4378 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1FC2EB6926FB532800BC4378 /* NTLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTLabel.swift; sourceTree = "<group>"; };
+		1FC2EB6B26FB542600BC4378 /* PriceLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceLabel.swift; sourceTree = "<group>"; };
+		1FC2EB6D26FB57A000BC4378 /* DescLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescLabel.swift; sourceTree = "<group>"; };
+		1FC2EB7026FB5A5800BC4378 /* UIView+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+EXT.swift"; sourceTree = "<group>"; };
+		1FC2EB7326FB62F100BC4378 /* ProductsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsMock.swift; sourceTree = "<group>"; };
+		1FC2EB7526FB7E6C00BC4378 /* UIColor+EXt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+EXt.swift"; sourceTree = "<group>"; };
+		1FC2EB7826FB841200BC4378 /* ProductsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsHeaderView.swift; sourceTree = "<group>"; };
+		1FC2EB7A26FB845800BC4378 /* BrandCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCardView.swift; sourceTree = "<group>"; };
+		1FC2EB7E26FB952600BC4378 /* ProductTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTitleView.swift; sourceTree = "<group>"; };
+		1FC2EB8126FB960200BC4378 /* NTButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTButton.swift; sourceTree = "<group>"; };
+		1FC2EB8326FB989100BC4378 /* CGFloat+EXt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+EXt.swift"; sourceTree = "<group>"; };
+		1FC2EB8626FC7DEB00BC4378 /* productModifyBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productModifyBase.swift; sourceTree = "<group>"; };
+		1FC2EB8826FC809D00BC4378 /* GetImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImageButton.swift; sourceTree = "<group>"; };
+		1FC2EB8A26FC8F7200BC4378 /* UITextFeild+EXt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFeild+EXt.swift"; sourceTree = "<group>"; };
+		1FC2EB8D26FC90B200BC4378 /* NTTextFeild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTTextFeild.swift; sourceTree = "<group>"; };
+		1FC2EB9126FC964900BC4378 /* alterProductButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alterProductButton.swift; sourceTree = "<group>"; };
+		1FC2EB9326FC988A00BC4378 /* NTEditButtonBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTEditButtonBase.swift; sourceTree = "<group>"; };
+		1FC2EB9526FCA02500BC4378 /* AddNewProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewProductVC.swift; sourceTree = "<group>"; };
+		1FC2EB9726FCD67F00BC4378 /* AddNewProductPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewProductPresenter.swift; sourceTree = "<group>"; };
+		1FC2EB9926FCDB0900BC4378 /* DetaieldProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaieldProduct.swift; sourceTree = "<group>"; };
+		1FC2EB9B26FCDC1A00BC4378 /* UIVC+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVC+EXT.swift"; sourceTree = "<group>"; };
+		1FC2EB9D26FCE1B800BC4378 /* DetaieldViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaieldViewPresenter.swift; sourceTree = "<group>"; };
+		1FC2EB9F26FCF53F00BC4378 /* EditProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProductVC.swift; sourceTree = "<group>"; };
+		1FC2EBA126FCF5B100BC4378 /* EditProductPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProductPresenter.swift; sourceTree = "<group>"; };
+		1FC2EBA326FCFEC700BC4378 /* FilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterVC.swift; sourceTree = "<group>"; };
+		1FC2EBA526FCFF1B00BC4378 /* FilterVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterVCPresenter.swift; sourceTree = "<group>"; };
+		1FC2EBA726FDE90000BC4378 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		1FC2EBA926FDED8B00BC4378 /* NTVectorImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTVectorImageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FC2EB2326FB368600BC4378 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FC2EB3926FB368A00BC4378 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FC2EB4426FB368A00BC4378 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FC2EB1D26FB368600BC4378 = {
+			isa = PBXGroup;
+			children = (
+				1FC2EB2826FB368600BC4378 /* NikeTask */,
+				1FC2EB3F26FB368A00BC4378 /* NikeTaskTests */,
+				1FC2EB4A26FB368A00BC4378 /* NikeTaskUITests */,
+				1FC2EB2726FB368600BC4378 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FC2EB2726FB368600BC4378 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FC2EB2626FB368600BC4378 /* NikeTask.app */,
+				1FC2EB3C26FB368A00BC4378 /* NikeTaskTests.xctest */,
+				1FC2EB4726FB368A00BC4378 /* NikeTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FC2EB2826FB368600BC4378 /* NikeTask */ = {
+			isa = PBXGroup;
+			children = (
+				1FC2EB5C26FB46A700BC4378 /* SupportFiles */,
+				1FC2EB5B26FB45F900BC4378 /* Presenter */,
+				1FC2EB5A26FB45EB00BC4378 /* View */,
+				1FC2EB5926FB45E400BC4378 /* Model */,
+				1FC2EB3226FB368A00BC4378 /* Assets.xcassets */,
+				1FC2EB3726FB368A00BC4378 /* Info.plist */,
+			);
+			path = NikeTask;
+			sourceTree = "<group>";
+		};
+		1FC2EB3F26FB368A00BC4378 /* NikeTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				1FC2EB4026FB368A00BC4378 /* NikeTaskTests.swift */,
+				1FC2EB4226FB368A00BC4378 /* Info.plist */,
+			);
+			path = NikeTaskTests;
+			sourceTree = "<group>";
+		};
+		1FC2EB4A26FB368A00BC4378 /* NikeTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1FC2EB4B26FB368A00BC4378 /* NikeTaskUITests.swift */,
+				1FC2EB4D26FB368A00BC4378 /* Info.plist */,
+			);
+			path = NikeTaskUITests;
+			sourceTree = "<group>";
+		};
+		1FC2EB5926FB45E400BC4378 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1FC2EB5F26FB4D2900BC4378 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1FC2EB5A26FB45EB00BC4378 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1FC2EB8C26FC909A00BC4378 /* TextFeilds */,
+				1FC2EB8526FC7D9300BC4378 /* ViewControllers */,
+				1FC2EB8026FB953D00BC4378 /* Buttons */,
+				1FC2EB7726FB83F400BC4378 /* CustomUIViews */,
+				1FC2EB6826FB531000BC4378 /* Labels */,
+				1FC2EB6326FB4F7200BC4378 /* ImageViews */,
+				1FC2EB6126FB4EE000BC4378 /* ProductCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1FC2EB5B26FB45F900BC4378 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1FC2EB5D26FB492F00BC4378 /* ProductsPresenter.swift */,
+				1FC2EB9726FCD67F00BC4378 /* AddNewProductPresenter.swift */,
+				1FC2EB9D26FCE1B800BC4378 /* DetaieldViewPresenter.swift */,
+				1FC2EBA126FCF5B100BC4378 /* EditProductPresenter.swift */,
+				1FC2EBA526FCFF1B00BC4378 /* FilterVCPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1FC2EB5C26FB46A700BC4378 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1FC2EB7226FB62DF00BC4378 /* MockData */,
+				1FC2EB6F26FB5A4500BC4378 /* Extensions */,
+				1FC2EB2926FB368600BC4378 /* AppDelegate.swift */,
+				1FC2EB2B26FB368600BC4378 /* SceneDelegate.swift */,
+				1FC2EB6626FB502B00BC4378 /* Constants.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		1FC2EB6326FB4F7200BC4378 /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				1FC2EB6426FB4F8700BC4378 /* NTImageView.swift */,
+				1FC2EBA926FDED8B00BC4378 /* NTVectorImageView.swift */,
+			);
+			path = ImageViews;
+			sourceTree = "<group>";
+		};
+		1FC2EB6826FB531000BC4378 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				1FC2EB6926FB532800BC4378 /* NTLabel.swift */,
+				1FC2EB6B26FB542600BC4378 /* PriceLabel.swift */,
+				1FC2EB6D26FB57A000BC4378 /* DescLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		1FC2EB6F26FB5A4500BC4378 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1FC2EB7026FB5A5800BC4378 /* UIView+EXT.swift */,
+				1FC2EB7526FB7E6C00BC4378 /* UIColor+EXt.swift */,
+				1FC2EB8326FB989100BC4378 /* CGFloat+EXt.swift */,
+				1FC2EB8A26FC8F7200BC4378 /* UITextFeild+EXt.swift */,
+				1FC2EB9B26FCDC1A00BC4378 /* UIVC+EXT.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1FC2EB7226FB62DF00BC4378 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				1FC2EB7326FB62F100BC4378 /* ProductsMock.swift */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		1FC2EB7726FB83F400BC4378 /* CustomUIViews */ = {
+			isa = PBXGroup;
+			children = (
+				1FC2EB7826FB841200BC4378 /* ProductsHeaderView.swift */,
+				1FC2EB7A26FB845800BC4378 /* BrandCardView.swift */,
+				1FC2EB7E26FB952600BC4378 /* ProductTitleView.swift */,
+				1FC2EBA726FDE90000BC4378 /* EmptyStateView.swift */,
+			);
+			path = CustomUIViews;
+			sourceTree = "<group>";
+		};
+		1FC2EB8026FB953D00BC4378 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				1FC2EB8126FB960200BC4378 /* NTButton.swift */,
+				1FC2EB8826FC809D00BC4378 /* GetImageButton.swift */,
+				1FC2EB9126FC964900BC4378 /* alterProductButton.swift */,
+				1FC2EB9326FC988A00BC4378 /* NTEditButtonBase.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		1FC2EB8526FC7D9300BC4378 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1FC2EB8626FC7DEB00BC4378 /* productModifyBase.swift */,
+				1FC2EB2D26FB368600BC4378 /* ProductsVC.swift */,
+				1FC2EB9526FCA02500BC4378 /* AddNewProductVC.swift */,
+				1FC2EB9926FCDB0900BC4378 /* DetaieldProduct.swift */,
+				1FC2EB9F26FCF53F00BC4378 /* EditProductVC.swift */,
+				1FC2EBA326FCFEC700BC4378 /* FilterVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1FC2EB8C26FC909A00BC4378 /* TextFeilds */ = {
+			isa = PBXGroup;
+			children = (
+				1FC2EB8D26FC90B200BC4378 /* NTTextFeild.swift */,
+			);
+			path = TextFeilds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FC2EB2526FB368600BC4378 /* NikeTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FC2EB5026FB368A00BC4378 /* Build configuration list for PBXNativeTarget "NikeTask" */;
+			buildPhases = (
+				1FC2EB2226FB368600BC4378 /* Sources */,
+				1FC2EB2326FB368600BC4378 /* Frameworks */,
+				1FC2EB2426FB368600BC4378 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NikeTask;
+			productName = NikeTask;
+			productReference = 1FC2EB2626FB368600BC4378 /* NikeTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1FC2EB3B26FB368A00BC4378 /* NikeTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FC2EB5326FB368A00BC4378 /* Build configuration list for PBXNativeTarget "NikeTaskTests" */;
+			buildPhases = (
+				1FC2EB3826FB368A00BC4378 /* Sources */,
+				1FC2EB3926FB368A00BC4378 /* Frameworks */,
+				1FC2EB3A26FB368A00BC4378 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FC2EB3E26FB368A00BC4378 /* PBXTargetDependency */,
+			);
+			name = NikeTaskTests;
+			productName = NikeTaskTests;
+			productReference = 1FC2EB3C26FB368A00BC4378 /* NikeTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1FC2EB4626FB368A00BC4378 /* NikeTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FC2EB5626FB368A00BC4378 /* Build configuration list for PBXNativeTarget "NikeTaskUITests" */;
+			buildPhases = (
+				1FC2EB4326FB368A00BC4378 /* Sources */,
+				1FC2EB4426FB368A00BC4378 /* Frameworks */,
+				1FC2EB4526FB368A00BC4378 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FC2EB4926FB368A00BC4378 /* PBXTargetDependency */,
+			);
+			name = NikeTaskUITests;
+			productName = NikeTaskUITests;
+			productReference = 1FC2EB4726FB368A00BC4378 /* NikeTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FC2EB1E26FB368600BC4378 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					1FC2EB2526FB368600BC4378 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					1FC2EB3B26FB368A00BC4378 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 1FC2EB2526FB368600BC4378;
+					};
+					1FC2EB4626FB368A00BC4378 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 1FC2EB2526FB368600BC4378;
+					};
+				};
+			};
+			buildConfigurationList = 1FC2EB2126FB368600BC4378 /* Build configuration list for PBXProject "NikeTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FC2EB1D26FB368600BC4378;
+			productRefGroup = 1FC2EB2726FB368600BC4378 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FC2EB2526FB368600BC4378 /* NikeTask */,
+				1FC2EB3B26FB368A00BC4378 /* NikeTaskTests */,
+				1FC2EB4626FB368A00BC4378 /* NikeTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FC2EB2426FB368600BC4378 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FC2EB3326FB368A00BC4378 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FC2EB3A26FB368A00BC4378 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FC2EB4526FB368A00BC4378 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FC2EB2226FB368600BC4378 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FC2EB2E26FB368600BC4378 /* ProductsVC.swift in Sources */,
+				1FC2EB2A26FB368600BC4378 /* AppDelegate.swift in Sources */,
+				1FC2EB6C26FB542600BC4378 /* PriceLabel.swift in Sources */,
+				1FC2EB9226FC964900BC4378 /* alterProductButton.swift in Sources */,
+				1FC2EB9826FCD67F00BC4378 /* AddNewProductPresenter.swift in Sources */,
+				1FC2EB9A26FCDB0900BC4378 /* DetaieldProduct.swift in Sources */,
+				1FC2EB8426FB989100BC4378 /* CGFloat+EXt.swift in Sources */,
+				1FC2EB6026FB4D2900BC4378 /* Product.swift in Sources */,
+				1FC2EB7126FB5A5800BC4378 /* UIView+EXT.swift in Sources */,
+				1FC2EBA426FCFEC700BC4378 /* FilterVC.swift in Sources */,
+				1FC2EB8226FB960200BC4378 /* NTButton.swift in Sources */,
+				1FC2EB8E26FC90B200BC4378 /* NTTextFeild.swift in Sources */,
+				1FC2EB6E26FB57A000BC4378 /* DescLabel.swift in Sources */,
+				1FC2EB9C26FCDC1A00BC4378 /* UIVC+EXT.swift in Sources */,
+				1FC2EB7426FB62F100BC4378 /* ProductsMock.swift in Sources */,
+				1FC2EB6226FB4EE000BC4378 /* ProductCell.swift in Sources */,
+				1FC2EB9426FC988A00BC4378 /* NTEditButtonBase.swift in Sources */,
+				1FC2EBAA26FDED8B00BC4378 /* NTVectorImageView.swift in Sources */,
+				1FC2EB7F26FB952600BC4378 /* ProductTitleView.swift in Sources */,
+				1FC2EB6526FB4F8700BC4378 /* NTImageView.swift in Sources */,
+				1FC2EB5E26FB492F00BC4378 /* ProductsPresenter.swift in Sources */,
+				1FC2EB7B26FB845800BC4378 /* BrandCardView.swift in Sources */,
+				1FC2EBA226FCF5B100BC4378 /* EditProductPresenter.swift in Sources */,
+				1FC2EB8726FC7DEB00BC4378 /* productModifyBase.swift in Sources */,
+				1FC2EBA626FCFF1B00BC4378 /* FilterVCPresenter.swift in Sources */,
+				1FC2EB8B26FC8F7200BC4378 /* UITextFeild+EXt.swift in Sources */,
+				1FC2EBA026FCF53F00BC4378 /* EditProductVC.swift in Sources */,
+				1FC2EB7926FB841200BC4378 /* ProductsHeaderView.swift in Sources */,
+				1FC2EBA826FDE90000BC4378 /* EmptyStateView.swift in Sources */,
+				1FC2EB2C26FB368600BC4378 /* SceneDelegate.swift in Sources */,
+				1FC2EB6726FB502B00BC4378 /* Constants.swift in Sources */,
+				1FC2EB7626FB7E6C00BC4378 /* UIColor+EXt.swift in Sources */,
+				1FC2EB6A26FB532800BC4378 /* NTLabel.swift in Sources */,
+				1FC2EB8926FC809D00BC4378 /* GetImageButton.swift in Sources */,
+				1FC2EB9626FCA02500BC4378 /* AddNewProductVC.swift in Sources */,
+				1FC2EB9E26FCE1B800BC4378 /* DetaieldViewPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FC2EB3826FB368A00BC4378 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FC2EB4126FB368A00BC4378 /* NikeTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FC2EB4326FB368A00BC4378 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FC2EB4C26FB368A00BC4378 /* NikeTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FC2EB3E26FB368A00BC4378 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FC2EB2526FB368600BC4378 /* NikeTask */;
+			targetProxy = 1FC2EB3D26FB368A00BC4378 /* PBXContainerItemProxy */;
+		};
+		1FC2EB4926FB368A00BC4378 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FC2EB2526FB368600BC4378 /* NikeTask */;
+			targetProxy = 1FC2EB4826FB368A00BC4378 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1FC2EB4E26FB368A00BC4378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1FC2EB4F26FB368A00BC4378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FC2EB5126FB368A00BC4378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GWXAFB6JRH;
+				INFOPLIST_FILE = NikeTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Amr-moussa.NikeTask";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1FC2EB5226FB368A00BC4378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GWXAFB6JRH;
+				INFOPLIST_FILE = NikeTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Amr-moussa.NikeTask";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1FC2EB5426FB368A00BC4378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GWXAFB6JRH;
+				INFOPLIST_FILE = NikeTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Amr-moussa.NikeTaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NikeTask.app/NikeTask";
+			};
+			name = Debug;
+		};
+		1FC2EB5526FB368A00BC4378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GWXAFB6JRH;
+				INFOPLIST_FILE = NikeTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Amr-moussa.NikeTaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NikeTask.app/NikeTask";
+			};
+			name = Release;
+		};
+		1FC2EB5726FB368A00BC4378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GWXAFB6JRH;
+				INFOPLIST_FILE = NikeTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Amr-moussa.NikeTaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NikeTask;
+			};
+			name = Debug;
+		};
+		1FC2EB5826FB368A00BC4378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GWXAFB6JRH;
+				INFOPLIST_FILE = NikeTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Amr-moussa.NikeTaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NikeTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FC2EB2126FB368600BC4378 /* Build configuration list for PBXProject "NikeTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FC2EB4E26FB368A00BC4378 /* Debug */,
+				1FC2EB4F26FB368A00BC4378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FC2EB5026FB368A00BC4378 /* Build configuration list for PBXNativeTarget "NikeTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FC2EB5126FB368A00BC4378 /* Debug */,
+				1FC2EB5226FB368A00BC4378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FC2EB5326FB368A00BC4378 /* Build configuration list for PBXNativeTarget "NikeTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FC2EB5426FB368A00BC4378 /* Debug */,
+				1FC2EB5526FB368A00BC4378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FC2EB5626FB368A00BC4378 /* Build configuration list for PBXNativeTarget "NikeTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FC2EB5726FB368A00BC4378 /* Debug */,
+				1FC2EB5826FB368A00BC4378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FC2EB1E26FB368600BC4378 /* Project object */;
+}
