@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="/NikeTask/Assets.xcassets/nikeLogo.imageset/swoosh-logo-black.png" width="300" max-width="50%" alt="Nike" />
+    <img src="/NikeTask/Assets.xcassets/nikeLogo.imageset/swoosh-logo-black.png" width="100" max-width="50%" alt="Nike" />
 </p>
 
 
